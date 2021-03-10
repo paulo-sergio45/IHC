@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Pagina IHC</title>
+  <link rel="stylesheet" href="css/materialize.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body class="grey lighten-5">
+
+  <header>
+    <nav class="nav-extended">
+      <div class="nav-wrapper">
+        <a href="/" class="brand-logo ">Logo</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+
+        <div id="pesquisa" class="hide-on-med-and-down brand-logo center">
+          <form class="">
+            <div class="input-field ">
+              <input type="search" placeholder="O que você tá procurando?" required>
+              <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+              <i class="material-icons ">close</i>
+            </div>
+          </form>
+        </div>
+
+
+        <ul class="right hide-on-med-and-down">
+
+
+          <li><a href="badges.html" class="tooltipped" data-position="bottom" data-tooltip="Ver itens no carrinho"><i
+                class="material-icons left">shopping_cart</i>Carinho
+              <span id="itensCar" class=" badge new">0</span></a></li>
+        </ul>
+      </div>
+    </nav>
+
+
+    <ul class="sidenav" id="mobile-demo">
+      <li class="logo">
+        <a href="#!" id="logosid" class="brand-logo">Logo</a>
+      </li>
+      <li class=" search">
+        <div class="search-wrapper">
+          <form class="">
+            <div class="input-field ">
+              <input id="search" type="search" placeholder="Pesquisa" required>
+              <i class="right material-icons">search</i>
+
+            </div>
+          </form>
+        </div>
+      </li>
+
+      <ul class="collapsible">
+        <li>
+          <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+          <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+          <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+          <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+        </li>
+      </ul>
+
+    </ul>
+
+
+
+
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="card-panel white">
+        <h4 class="grey-text  center">Novo cadrastro</h4>
+
+        <div class="row">
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s6">
+
+                <input id="nome" type="text" class="validate">
+                <label for="nome">Nome</label>
+                <span class="helper-text" data-error="Email incorreto" data-success=""></span>
+              </div>
+
+              <div class="input-field col s6">
+                <input id="sobrenome" type="text" class="validate">
+                <label for="sobrenome">Sobrenome</label>
+                <span class="helper-text" data-error="Email incorreto" data-success=""></span>
+
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s6">
+                <input id="senha" type="password" class="validate">
+                <label for="senha">Senha</label>
+
+              </div>
+              <div class="input-field col s6">
+                <input id="confimar_senha" type="password" class="validate">
+                <label for="confimar_senha">Confimar senha</label>
+
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="email" type="email" class="validate" />
+                <label for="email">Email</label>
+                <span class="helper-text" data-error="Email incorreto" data-success=""></span>
+
+              </div>
+
+            </div>
+            <div class="row">
+              <div class="input-field col s6">
+
+                <input id="data" type="text" class="datepicker" />
+                <label for="data">Data de nacimento</label>
+
+              </div>
+            </div>
+
+
+            <div class="input-field center col s6">
+              <a onclick="M.toast({html: 'Conta cadastrada'})" class="btn blue">Confimar</a></div>
+            <div class="input-field center col s6">
+              <button onclick="M.toast({html: 'apagado'})" type="reset" class="btn red">Limpar Campos</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+
+  </main>
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m6 l3">
+          <h5 class="white-text">Informações</h5>
+          <p class="grey-text text-lighten-4">modelo de pagina da web
+            criada para materia IHC.
+          </p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Opções de links</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        © 2020 Copyright paulão
+        <a class="grey-text text-lighten-4 right" href="#!"></a>
+      </div>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+  <script src="js/materialize.min.js"></script>
+</body>
+<script>
+  // Initialization Datepicker
+  var optionsDatepicker = {
+    format: 'dd/mm/yyyy',
+    i18n: {
+      today: 'Hoje',
+      clear: 'Limpar',
+      done: 'Ok',
+      nextMonth: 'Próximo mês',
+      previousMonth: 'Mês anterior',
+      weekdaysAbbrev: ['D', 'S', 'T', 'Q', 'Q', 'S', 'S'],
+      weekdaysShort: ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb'],
+      weekdays: ['Domingo', 'Segunda-Feira', 'Terça-Feira', 'Quarta-Feira', 'Quinta-Feira', 'Sexta-Feira', 'Sábado'],
+      monthsShort: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'],
+      months: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro']
+    }////consetar depois
+  };
+  var elemsDatepicker = document.querySelectorAll('.datepicker');
+  var instancesDatepicker = M.Datepicker.init(elemsDatepicker, optionsDatepicker);
+
+
+
+</script>
+
+</html>

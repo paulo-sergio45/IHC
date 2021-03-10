@@ -1,0 +1,44 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.nav-pesqui{
+  width: 50%;
+  margin: 0 auto;
+  height: 50px;
+}
+
+
+nav.nav-extended 
+
+.nav-wrapper{
+  min-height: 50px;
+  height: 50px;
+} 
+
+
+nav a{
+  height: 50px;
+  line-height: 50px;
+}
+nav .nav-wrapper i{
+  height: 50px;
+  line-height: 50px;
+}
+
+form.nav-pesqui i{
+  height: 50px;
+line-height: 50px;
+}
+
+.dropdown-content li > a:hover, .dropdown-content li > span:hover{
+  background-color:unset;
+}
+
+  
